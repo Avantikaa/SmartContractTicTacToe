@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TicTacToe</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <script src="./app.js"></script>
+</head>
+<body>
+  <h1>TicTacToe</h1>
+  <h2>Example Truffle Dapp</h2>
+  <div class="in-game waiting-for-join" id="waiting">Waiting for Opponent!</div>
+  <div class="in-game waiting-for-join" id="your-turn">Your Turn</div>
+  <table id="board" class="in-game waiting-for-join">
+    <tbody>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="game-start">
+
+
+  <br><br><button id="create" onclick="App.createGame()" class="btn btn-primary">Create Game</button> or - <button id="join" onclick="App.joinGame()" class="btn btn-default">Join Game</button>
+<br />
+One Game Costs: 1 Ether<br />
+</div>
+<div class="in-game">
+  Game-Address: <span id="game-address"></span><br />
+  <div class="waiting-for-join">Opponent-Address: <span id="opponent-address"></span></div>
+</div>
+  <hr /><button class="btn btn-sm" onclick="App.useAccountOne()">Use Account #2</button>
+  <br />
+  <span class="hint small"><strong>Hint:</strong> open the browser developer console to view any errors and warnings.</span>
+</div>
+</div>
+</div>
+</body>
+</html>
